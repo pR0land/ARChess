@@ -32,14 +32,10 @@ public class trackAndPlaceChessboard : MonoBehaviour
         //desubscribe if we for some reason dont want to track anymore
         trackedImageManager.trackedImagesChanged -= OnTrackedImagesChanged;
     }
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
     //our eventhandler, handles when there is a change in the images being tracked
     private void OnTrackedImagesChanged(ARTrackedImagesChangedEventArgs imageChangeEvents)
     {
+        Debug.Log($"TEST");
         //when new images are detecked in the scene
         foreach(var trackedImage in imageChangeEvents.added)
         {
