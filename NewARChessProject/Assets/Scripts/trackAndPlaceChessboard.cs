@@ -5,20 +5,32 @@ using UnityEngine;
 using UnityEngine.XR.ARFoundation;
 using UnityEngine.XR.ARSubsystems;
 
+[System.Serializable]
+public struct ARObjectPrefab
+{
+    public string name;
+    public GameObject prefab;
+}
+
 [RequireComponent(typeof(ARTrackedImageManager))]
 public class trackAndPlaceChessboard : MonoBehaviour
+
 {
     //reference to ARtrackedImageManager
     private ARTrackedImageManager trackedImageManager;
     // Our ARprefabs (chessboard and or pices)
-    [SerializeField] private GameObject[] ARObjectPrefabs;
+    public List<ARObjectPrefab> objectPrefabs = new List<ARObjectPrefab>();
     // The objects we have instantiated
-    private readonly Dictionary<string, GameObject> instantatedARObjects = new Dictionary<string, GameObject>();
-    // Start is called before the first frame update
+    private Dictionary<string, GameObject> instantiatedObjects;
+    
+    
+    
     void Start()
     {
         //gets the ARtrackedImageManager
         trackedImageManager = GetComponent<ARTrackedImageManager>();
+        trackedImageManager.trackedImagesChanged += OnTrackedImagesChanged;
+        instantiatedObjects = new Dictionary<string, GameObject>();
     }
 
     void OnEnable()
@@ -38,35 +50,39 @@ public class trackAndPlaceChessboard : MonoBehaviour
         
     }
     //our eventhandler, handles when there is a change in the images being tracked
-    private void OnTrackedImagesChanged(ARTrackedImagesChangedEventArgs imageChangeEvents)
+    
+    private void OnTrackedImagesChanged(ARTrackedImagesChangedEventArgs eventArgs)
     {
-        //when new images are detecked in the scene
-        foreach(var trackedImage in imageChangeEvents.added)
-        {
-            //get reference to what image is detected
-            var imageName = trackedImage.referenceImage.name;
-            //check if there is an object corresponding to that image, and the prefab is not present somwhere else *if you want to instantiate more of the same change this*
-            foreach(var prefab in ARObjectPrefabs)
-            {
-                if(string.Compare(prefab.name,imageName,System.StringComparison.OrdinalIgnoreCase) == 0 && !instantatedARObjects.ContainsKey(imageName)){
-                    var ARObject = Instantiate(prefab, trackedImage.transform);
-                    instantatedARObjects[imageName] = ARObject;
+        foreach (ARTrackedImage trackedImage in eventArgs.added) 
+        { 
+            foreach (ARObjectPrefab obj in objectPrefabs) 
+            { 
+                if ((obj.name == trackedImage.referenceImage.name) && (!instantiatedObjects.ContainsKey(obj.name))) 
+                {
+                    instantiatedObjects[obj.name] = Instantiate(obj.prefab, trackedImage.transform);
                 }
             }
-        }
-        //Set prefabs active if they apear in image again, or not active if they are not in the image.
-        foreach(var trackedImage in imageChangeEvents.updated)
-        {
-            instantatedARObjects[trackedImage.referenceImage.name].SetActive(trackedImage.trackingState == TrackingState.Tracking);
-        }
 
-        //handle if the ARsubsystem stops looking for the image *destroys the AR object and reference to it*
-        foreach(var trackedImage in imageChangeEvents.removed)
-        {
-            Destroy(instantatedARObjects[trackedImage.referenceImage.name]);
-            instantatedARObjects.Remove(trackedImage.referenceImage.name);
         }
+    
+        foreach (ARTrackedImage trackedImage in eventArgs.updated) 
+        { 
+            if (trackedImage.trackingState == TrackingState.Tracking) 
+            { 
+                instantiatedObjects[trackedImage.referenceImage.name].SetActive(true);
+                Debug.Log($"FOUND {trackedImage.referenceImage.name}");
+            } 
+            else 
+            { 
+                instantiatedObjects[trackedImage.referenceImage.name].SetActive(false); 
+            } 
+        }
+        foreach (ARTrackedImage trackedImage in eventArgs.removed) 
+        { 
+            Destroy(instantiatedObjects[trackedImage.referenceImage.name]);
 
-
+            instantiatedObjects.Remove(trackedImage.referenceImage.name);
+        }
+    
     }
 }

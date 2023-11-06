@@ -477,8 +477,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28ca6884342a1b642be7fb9ba5ce3704, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ARObjectPrefabs:
-  - {fileID: 4618188364848065121, guid: 8940bd7c46eb8744e8a7fb28385d27a9, type: 3}
+  objectPrefabs:
+  - name: VaselineBillede
+    prefab: {fileID: 4618188364848065121, guid: 8940bd7c46eb8744e8a7fb28385d27a9,
+      type: 3}
 --- !u!114 &1659859601
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -493,7 +495,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_SerializedLibrary: {fileID: 11400000, guid: 05d968f7fe5a350419962a7829db59dd,
     type: 2}
-  m_MaxNumberOfMovingImages: 0
+  m_MaxNumberOfMovingImages: 1
   m_TrackedImagePrefab: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
