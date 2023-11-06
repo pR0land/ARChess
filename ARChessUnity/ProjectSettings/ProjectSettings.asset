@@ -853,7 +853,13 @@ PlayerSettings:
   XboxOneOverrideIdentityName: 
   XboxOneOverrideIdentityPublisher: 
   vrEditorSettings: {}
-  cloudServicesEnabled: {}
+  cloudServicesEnabled:
+    Build: 0
+    Game Performance: 0
+    Legacy Analytics: 0
+    Purchasing: 0
+    UDP: 0
+    Unity Ads: 0
   luminIcon:
     m_Name: 
     m_ModelFolderPath: 
@@ -873,10 +879,10 @@ PlayerSettings:
   apiCompatibilityLevel: 6
   activeInputHandler: 2
   windowsGamepadBackendHint: 0
-  cloudProjectId: 04b19b77-fa65-499a-8383-c01b8b32023d
+  cloudProjectId: 7018beaa-7879-4793-a697-3a8a1d898b1d
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
-  projectName: ARChessUnity
+  projectName: ARChessUnity (1)
   organizationId: p00l0rd
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 0
