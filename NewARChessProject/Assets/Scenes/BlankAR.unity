@@ -478,8 +478,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectPrefabs:
-  - name: VaselineBillede
-    prefab: {fileID: 4618188364848065121, guid: 8940bd7c46eb8744e8a7fb28385d27a9,
+  - name: SkakBillede
+    prefab: {fileID: 6722600799369124249, guid: 3de00c4c08433494db352afe8cac54ed,
       type: 3}
 --- !u!114 &1659859601
 MonoBehaviour:
