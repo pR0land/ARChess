@@ -72,7 +72,7 @@ public class ChessPieceInteractor : MonoBehaviour
     {
         //Debug.Log("Log: Piece selected");
         _selectedPiece = piece;
-        _selectedPiece.transform.GetChild(0).GetComponent<Renderer>().material.color = Color.red;
+        //_selectedPiece.transform.GetChild(0).GetComponent<Renderer>().material.color = Color.red;
         //_selectedPiece.GetComponent<Material>().color = Color.red;
     }
 
@@ -80,7 +80,7 @@ public class ChessPieceInteractor : MonoBehaviour
     {
         //Debug.Log("Log: Piece deselected");
         //Get child gameobject and set its color to white
-        _selectedPiece.transform.GetChild(0).GetComponent<Renderer>().material.color = Color.white;
+        //_selectedPiece.transform.GetChild(0).GetComponent<Renderer>().material.color = Color.white;
         
         //_selectedPiece.GetComponent<Material>().color = Color.white;
         _selectedPiece = null;
