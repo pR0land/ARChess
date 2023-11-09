@@ -9408,17 +9408,23 @@ Transform:
   - {fileID: 4106240921213477475}
   - {fileID: 7465942346031532043}
   - {fileID: 5713278085328537844}
+  - {fileID: 4964045941927399353}
   - {fileID: 5976318616402025853}
   - {fileID: 8451229927303653464}
   - {fileID: 6825973056378949684}
   - {fileID: 253612259762689227}
   - {fileID: 4559056193492724682}
   - {fileID: 3309909227874231050}
+  - {fileID: 5713360312660322}
+  - {fileID: 741591820698665524}
   - {fileID: 5989338371519066890}
   - {fileID: 7930286401284602686}
   - {fileID: 5222638957806978971}
   - {fileID: 8275435983665793389}
   - {fileID: 8122841082514147768}
+  - {fileID: 8897882238310447370}
+  - {fileID: 7612050933637553054}
+  - {fileID: 4284437313390694647}
   - {fileID: 5106613712085963169}
   - {fileID: 8482408873069567455}
   - {fileID: 937230538916655021}
@@ -9427,12 +9433,6 @@ Transform:
   - {fileID: 1588803143823559383}
   - {fileID: 8068227766162739329}
   - {fileID: 4346915784691233428}
-  - {fileID: 8897882238310447370}
-  - {fileID: 7612050933637553054}
-  - {fileID: 4284437313390694647}
-  - {fileID: 5713360312660322}
-  - {fileID: 741591820698665524}
-  - {fileID: 4964045941927399353}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &6847580888117237561
@@ -11018,7 +11018,7 @@ PrefabInstance:
     - target: {fileID: 2394499989696310675, guid: c19f03e6d8bc3e84e9489ed02e7ca02a,
         type: 3}
       propertyPath: m_Name
-      value: MoveableChessPiece (7)
+      value: WhiteBishopDark
       objectReference: {fileID: 0}
     - target: {fileID: 7204924118905732846, guid: c19f03e6d8bc3e84e9489ed02e7ca02a,
         type: 3}
@@ -11038,7 +11038,7 @@ PrefabInstance:
     - target: {fileID: 7204924118905732846, guid: c19f03e6d8bc3e84e9489ed02e7ca02a,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.1207
+      value: -0.0595
       objectReference: {fileID: 0}
     - target: {fileID: 7204924118905732846, guid: c19f03e6d8bc3e84e9489ed02e7ca02a,
         type: 3}
@@ -11048,7 +11048,7 @@ PrefabInstance:
     - target: {fileID: 7204924118905732846, guid: c19f03e6d8bc3e84e9489ed02e7ca02a,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.0583
+      value: -0.1183
       objectReference: {fileID: 0}
     - target: {fileID: 7204924118905732846, guid: c19f03e6d8bc3e84e9489ed02e7ca02a,
         type: 3}
@@ -11112,7 +11112,7 @@ PrefabInstance:
     - target: {fileID: 2394499989696310675, guid: c19f03e6d8bc3e84e9489ed02e7ca02a,
         type: 3}
       propertyPath: m_Name
-      value: MoveableChessPiece (23)
+      value: BlackPawn
       objectReference: {fileID: 0}
     - target: {fileID: 7204924118905732846, guid: c19f03e6d8bc3e84e9489ed02e7ca02a,
         type: 3}
@@ -11132,7 +11132,7 @@ PrefabInstance:
     - target: {fileID: 7204924118905732846, guid: c19f03e6d8bc3e84e9489ed02e7ca02a,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.057600003
+      value: -0.0581
       objectReference: {fileID: 0}
     - target: {fileID: 7204924118905732846, guid: c19f03e6d8bc3e84e9489ed02e7ca02a,
         type: 3}
@@ -11142,7 +11142,7 @@ PrefabInstance:
     - target: {fileID: 7204924118905732846, guid: c19f03e6d8bc3e84e9489ed02e7ca02a,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.0897
+      value: 0.0595
       objectReference: {fileID: 0}
     - target: {fileID: 7204924118905732846, guid: c19f03e6d8bc3e84e9489ed02e7ca02a,
         type: 3}
@@ -11236,7 +11236,7 @@ PrefabInstance:
     - target: {fileID: 2394499989696310675, guid: c19f03e6d8bc3e84e9489ed02e7ca02a,
         type: 3}
       propertyPath: m_Name
-      value: MoveableChessPiece (31)
+      value: BlackKnight
       objectReference: {fileID: 0}
     - target: {fileID: 7204924118905732846, guid: c19f03e6d8bc3e84e9489ed02e7ca02a,
         type: 3}
@@ -11256,7 +11256,7 @@ PrefabInstance:
     - target: {fileID: 7204924118905732846, guid: c19f03e6d8bc3e84e9489ed02e7ca02a,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.0886
+      value: 0.0597
       objectReference: {fileID: 0}
     - target: {fileID: 7204924118905732846, guid: c19f03e6d8bc3e84e9489ed02e7ca02a,
         type: 3}
@@ -11266,12 +11266,12 @@ PrefabInstance:
     - target: {fileID: 7204924118905732846, guid: c19f03e6d8bc3e84e9489ed02e7ca02a,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.0897
+      value: 0.0888
       objectReference: {fileID: 0}
     - target: {fileID: 7204924118905732846, guid: c19f03e6d8bc3e84e9489ed02e7ca02a,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: 7204924118905732846, guid: c19f03e6d8bc3e84e9489ed02e7ca02a,
         type: 3}
@@ -11281,7 +11281,7 @@ PrefabInstance:
     - target: {fileID: 7204924118905732846, guid: c19f03e6d8bc3e84e9489ed02e7ca02a,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: 7204924118905732846, guid: c19f03e6d8bc3e84e9489ed02e7ca02a,
         type: 3}
@@ -11296,7 +11296,7 @@ PrefabInstance:
     - target: {fileID: 7204924118905732846, guid: c19f03e6d8bc3e84e9489ed02e7ca02a,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
+      value: -90
       objectReference: {fileID: 0}
     - target: {fileID: 7204924118905732846, guid: c19f03e6d8bc3e84e9489ed02e7ca02a,
         type: 3}
@@ -11335,7 +11335,7 @@ PrefabInstance:
     - target: {fileID: 2394499989696310675, guid: c19f03e6d8bc3e84e9489ed02e7ca02a,
         type: 3}
       propertyPath: m_Name
-      value: MoveableChessPiece (18)
+      value: BlackPawn
       objectReference: {fileID: 0}
     - target: {fileID: 7204924118905732846, guid: c19f03e6d8bc3e84e9489ed02e7ca02a,
         type: 3}
@@ -11434,7 +11434,7 @@ PrefabInstance:
     - target: {fileID: 2394499989696310675, guid: c19f03e6d8bc3e84e9489ed02e7ca02a,
         type: 3}
       propertyPath: m_Name
-      value: MoveableChessPiece (20)
+      value: BlackPawn
       objectReference: {fileID: 0}
     - target: {fileID: 7204924118905732846, guid: c19f03e6d8bc3e84e9489ed02e7ca02a,
         type: 3}
@@ -11454,7 +11454,7 @@ PrefabInstance:
     - target: {fileID: 7204924118905732846, guid: c19f03e6d8bc3e84e9489ed02e7ca02a,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.057600003
+      value: 0.0878
       objectReference: {fileID: 0}
     - target: {fileID: 7204924118905732846, guid: c19f03e6d8bc3e84e9489ed02e7ca02a,
         type: 3}
@@ -11464,7 +11464,7 @@ PrefabInstance:
     - target: {fileID: 7204924118905732846, guid: c19f03e6d8bc3e84e9489ed02e7ca02a,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.0583
+      value: 0.0578
       objectReference: {fileID: 0}
     - target: {fileID: 7204924118905732846, guid: c19f03e6d8bc3e84e9489ed02e7ca02a,
         type: 3}
@@ -11533,7 +11533,7 @@ PrefabInstance:
     - target: {fileID: 2394499989696310675, guid: c19f03e6d8bc3e84e9489ed02e7ca02a,
         type: 3}
       propertyPath: m_Name
-      value: MoveableChessPiece (21)
+      value: BlackPawn
       objectReference: {fileID: 0}
     - target: {fileID: 7204924118905732846, guid: c19f03e6d8bc3e84e9489ed02e7ca02a,
         type: 3}
@@ -11553,7 +11553,7 @@ PrefabInstance:
     - target: {fileID: 7204924118905732846, guid: c19f03e6d8bc3e84e9489ed02e7ca02a,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.0576
+      value: -0.0008
       objectReference: {fileID: 0}
     - target: {fileID: 7204924118905732846, guid: c19f03e6d8bc3e84e9489ed02e7ca02a,
         type: 3}
@@ -11563,7 +11563,7 @@ PrefabInstance:
     - target: {fileID: 7204924118905732846, guid: c19f03e6d8bc3e84e9489ed02e7ca02a,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.0283
+      value: 0.0602
       objectReference: {fileID: 0}
     - target: {fileID: 7204924118905732846, guid: c19f03e6d8bc3e84e9489ed02e7ca02a,
         type: 3}
@@ -11657,7 +11657,7 @@ PrefabInstance:
     - target: {fileID: 2394499989696310675, guid: c19f03e6d8bc3e84e9489ed02e7ca02a,
         type: 3}
       propertyPath: m_Name
-      value: MoveableChessPiece (26)
+      value: BlackKnight
       objectReference: {fileID: 0}
     - target: {fileID: 7204924118905732846, guid: c19f03e6d8bc3e84e9489ed02e7ca02a,
         type: 3}
@@ -11677,7 +11677,7 @@ PrefabInstance:
     - target: {fileID: 7204924118905732846, guid: c19f03e6d8bc3e84e9489ed02e7ca02a,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.0886
+      value: -0.0895
       objectReference: {fileID: 0}
     - target: {fileID: 7204924118905732846, guid: c19f03e6d8bc3e84e9489ed02e7ca02a,
         type: 3}
@@ -11687,12 +11687,12 @@ PrefabInstance:
     - target: {fileID: 7204924118905732846, guid: c19f03e6d8bc3e84e9489ed02e7ca02a,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.0594
+      value: 0.0894
       objectReference: {fileID: 0}
     - target: {fileID: 7204924118905732846, guid: c19f03e6d8bc3e84e9489ed02e7ca02a,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: 7204924118905732846, guid: c19f03e6d8bc3e84e9489ed02e7ca02a,
         type: 3}
@@ -11702,7 +11702,7 @@ PrefabInstance:
     - target: {fileID: 7204924118905732846, guid: c19f03e6d8bc3e84e9489ed02e7ca02a,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: 7204924118905732846, guid: c19f03e6d8bc3e84e9489ed02e7ca02a,
         type: 3}
@@ -11717,7 +11717,7 @@ PrefabInstance:
     - target: {fileID: 7204924118905732846, guid: c19f03e6d8bc3e84e9489ed02e7ca02a,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
+      value: -90
       objectReference: {fileID: 0}
     - target: {fileID: 7204924118905732846, guid: c19f03e6d8bc3e84e9489ed02e7ca02a,
         type: 3}
@@ -11756,7 +11756,7 @@ PrefabInstance:
     - target: {fileID: 2394499989696310675, guid: c19f03e6d8bc3e84e9489ed02e7ca02a,
         type: 3}
       propertyPath: m_Name
-      value: MoveableChessPiece (10)
+      value: WhitePawn
       objectReference: {fileID: 0}
     - target: {fileID: 7204924118905732846, guid: c19f03e6d8bc3e84e9489ed02e7ca02a,
         type: 3}
@@ -11776,7 +11776,7 @@ PrefabInstance:
     - target: {fileID: 7204924118905732846, guid: c19f03e6d8bc3e84e9489ed02e7ca02a,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.091
+      value: 0.0294
       objectReference: {fileID: 0}
     - target: {fileID: 7204924118905732846, guid: c19f03e6d8bc3e84e9489ed02e7ca02a,
         type: 3}
@@ -11786,7 +11786,7 @@ PrefabInstance:
     - target: {fileID: 7204924118905732846, guid: c19f03e6d8bc3e84e9489ed02e7ca02a,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.0594
+      value: -0.0902
       objectReference: {fileID: 0}
     - target: {fileID: 7204924118905732846, guid: c19f03e6d8bc3e84e9489ed02e7ca02a,
         type: 3}
@@ -11850,7 +11850,7 @@ PrefabInstance:
     - target: {fileID: 2394499989696310675, guid: c19f03e6d8bc3e84e9489ed02e7ca02a,
         type: 3}
       propertyPath: m_Name
-      value: MoveableChessPiece (22)
+      value: BlackPawn
       objectReference: {fileID: 0}
     - target: {fileID: 7204924118905732846, guid: c19f03e6d8bc3e84e9489ed02e7ca02a,
         type: 3}
@@ -11870,7 +11870,7 @@ PrefabInstance:
     - target: {fileID: 7204924118905732846, guid: c19f03e6d8bc3e84e9489ed02e7ca02a,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.057600003
+      value: -0.1192
       objectReference: {fileID: 0}
     - target: {fileID: 7204924118905732846, guid: c19f03e6d8bc3e84e9489ed02e7ca02a,
         type: 3}
@@ -11880,7 +11880,7 @@ PrefabInstance:
     - target: {fileID: 7204924118905732846, guid: c19f03e6d8bc3e84e9489ed02e7ca02a,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.0288
+      value: 0.0602
       objectReference: {fileID: 0}
     - target: {fileID: 7204924118905732846, guid: c19f03e6d8bc3e84e9489ed02e7ca02a,
         type: 3}
@@ -11944,7 +11944,7 @@ PrefabInstance:
     - target: {fileID: 2394499989696310675, guid: c19f03e6d8bc3e84e9489ed02e7ca02a,
         type: 3}
       propertyPath: m_Name
-      value: MoveableChessPiece (4)
+      value: WhiteBishopLight
       objectReference: {fileID: 0}
     - target: {fileID: 7204924118905732846, guid: c19f03e6d8bc3e84e9489ed02e7ca02a,
         type: 3}
@@ -11964,7 +11964,7 @@ PrefabInstance:
     - target: {fileID: 7204924118905732846, guid: c19f03e6d8bc3e84e9489ed02e7ca02a,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.1207
+      value: 0.0286
       objectReference: {fileID: 0}
     - target: {fileID: 7204924118905732846, guid: c19f03e6d8bc3e84e9489ed02e7ca02a,
         type: 3}
@@ -11974,7 +11974,7 @@ PrefabInstance:
     - target: {fileID: 7204924118905732846, guid: c19f03e6d8bc3e84e9489ed02e7ca02a,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.0283
+      value: -0.1187
       objectReference: {fileID: 0}
     - target: {fileID: 7204924118905732846, guid: c19f03e6d8bc3e84e9489ed02e7ca02a,
         type: 3}
@@ -12038,7 +12038,7 @@ PrefabInstance:
     - target: {fileID: 2394499989696310675, guid: c19f03e6d8bc3e84e9489ed02e7ca02a,
         type: 3}
       propertyPath: m_Name
-      value: MoveableChessPiece (5)
+      value: WhiteKing
       objectReference: {fileID: 0}
     - target: {fileID: 7204924118905732846, guid: c19f03e6d8bc3e84e9489ed02e7ca02a,
         type: 3}
@@ -12058,7 +12058,7 @@ PrefabInstance:
     - target: {fileID: 7204924118905732846, guid: c19f03e6d8bc3e84e9489ed02e7ca02a,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.1207
+      value: -0.0004
       objectReference: {fileID: 0}
     - target: {fileID: 7204924118905732846, guid: c19f03e6d8bc3e84e9489ed02e7ca02a,
         type: 3}
@@ -12068,7 +12068,7 @@ PrefabInstance:
     - target: {fileID: 7204924118905732846, guid: c19f03e6d8bc3e84e9489ed02e7ca02a,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.0008
+      value: -0.118
       objectReference: {fileID: 0}
     - target: {fileID: 7204924118905732846, guid: c19f03e6d8bc3e84e9489ed02e7ca02a,
         type: 3}
@@ -12132,7 +12132,7 @@ PrefabInstance:
     - target: {fileID: 2394499989696310675, guid: c19f03e6d8bc3e84e9489ed02e7ca02a,
         type: 3}
       propertyPath: m_Name
-      value: MoveableChessPiece (25)
+      value: BlackRook
       objectReference: {fileID: 0}
     - target: {fileID: 7204924118905732846, guid: c19f03e6d8bc3e84e9489ed02e7ca02a,
         type: 3}
@@ -12226,7 +12226,7 @@ PrefabInstance:
     - target: {fileID: 2394499989696310675, guid: c19f03e6d8bc3e84e9489ed02e7ca02a,
         type: 3}
       propertyPath: m_Name
-      value: MoveableChessPiece (29)
+      value: BlackBishopDark
       objectReference: {fileID: 0}
     - target: {fileID: 7204924118905732846, guid: c19f03e6d8bc3e84e9489ed02e7ca02a,
         type: 3}
@@ -12246,7 +12246,7 @@ PrefabInstance:
     - target: {fileID: 7204924118905732846, guid: c19f03e6d8bc3e84e9489ed02e7ca02a,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.088599995
+      value: 0.0295
       objectReference: {fileID: 0}
     - target: {fileID: 7204924118905732846, guid: c19f03e6d8bc3e84e9489ed02e7ca02a,
         type: 3}
@@ -12256,7 +12256,7 @@ PrefabInstance:
     - target: {fileID: 7204924118905732846, guid: c19f03e6d8bc3e84e9489ed02e7ca02a,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.0283
+      value: 0.0901
       objectReference: {fileID: 0}
     - target: {fileID: 7204924118905732846, guid: c19f03e6d8bc3e84e9489ed02e7ca02a,
         type: 3}
@@ -12325,7 +12325,7 @@ PrefabInstance:
     - target: {fileID: 2394499989696310675, guid: c19f03e6d8bc3e84e9489ed02e7ca02a,
         type: 3}
       propertyPath: m_Name
-      value: MoveableChessPiece (1)
+      value: WhiteRook
       objectReference: {fileID: 0}
     - target: {fileID: 7204924118905732846, guid: c19f03e6d8bc3e84e9489ed02e7ca02a,
         type: 3}
@@ -12419,7 +12419,7 @@ PrefabInstance:
     - target: {fileID: 2394499989696310675, guid: c19f03e6d8bc3e84e9489ed02e7ca02a,
         type: 3}
       propertyPath: m_Name
-      value: MoveableChessPiece (19)
+      value: BlackPawn
       objectReference: {fileID: 0}
     - target: {fileID: 7204924118905732846, guid: c19f03e6d8bc3e84e9489ed02e7ca02a,
         type: 3}
@@ -12439,7 +12439,7 @@ PrefabInstance:
     - target: {fileID: 7204924118905732846, guid: c19f03e6d8bc3e84e9489ed02e7ca02a,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.057600003
+      value: -0.0899
       objectReference: {fileID: 0}
     - target: {fileID: 7204924118905732846, guid: c19f03e6d8bc3e84e9489ed02e7ca02a,
         type: 3}
@@ -12449,7 +12449,7 @@ PrefabInstance:
     - target: {fileID: 7204924118905732846, guid: c19f03e6d8bc3e84e9489ed02e7ca02a,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.0008
+      value: 0.0582
       objectReference: {fileID: 0}
     - target: {fileID: 7204924118905732846, guid: c19f03e6d8bc3e84e9489ed02e7ca02a,
         type: 3}
@@ -12518,7 +12518,7 @@ PrefabInstance:
     - target: {fileID: 2394499989696310675, guid: c19f03e6d8bc3e84e9489ed02e7ca02a,
         type: 3}
       propertyPath: m_Name
-      value: MoveableChessPiece
+      value: WhiteRook
       objectReference: {fileID: 0}
     - target: {fileID: 7204924118905732846, guid: c19f03e6d8bc3e84e9489ed02e7ca02a,
         type: 3}
@@ -12538,7 +12538,7 @@ PrefabInstance:
     - target: {fileID: 7204924118905732846, guid: c19f03e6d8bc3e84e9489ed02e7ca02a,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.1207
+      value: 0.0893
       objectReference: {fileID: 0}
     - target: {fileID: 7204924118905732846, guid: c19f03e6d8bc3e84e9489ed02e7ca02a,
         type: 3}
@@ -12548,7 +12548,7 @@ PrefabInstance:
     - target: {fileID: 7204924118905732846, guid: c19f03e6d8bc3e84e9489ed02e7ca02a,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.0899
+      value: -0.1198
       objectReference: {fileID: 0}
     - target: {fileID: 7204924118905732846, guid: c19f03e6d8bc3e84e9489ed02e7ca02a,
         type: 3}
@@ -12612,7 +12612,7 @@ PrefabInstance:
     - target: {fileID: 2394499989696310675, guid: c19f03e6d8bc3e84e9489ed02e7ca02a,
         type: 3}
       propertyPath: m_Name
-      value: MoveableChessPiece (8)
+      value: WhiteKnight
       objectReference: {fileID: 0}
     - target: {fileID: 7204924118905732846, guid: c19f03e6d8bc3e84e9489ed02e7ca02a,
         type: 3}
@@ -12632,7 +12632,7 @@ PrefabInstance:
     - target: {fileID: 7204924118905732846, guid: c19f03e6d8bc3e84e9489ed02e7ca02a,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.1207
+      value: 0.0588
       objectReference: {fileID: 0}
     - target: {fileID: 7204924118905732846, guid: c19f03e6d8bc3e84e9489ed02e7ca02a,
         type: 3}
@@ -12642,12 +12642,12 @@ PrefabInstance:
     - target: {fileID: 7204924118905732846, guid: c19f03e6d8bc3e84e9489ed02e7ca02a,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.0897
+      value: -0.1203
       objectReference: {fileID: 0}
     - target: {fileID: 7204924118905732846, guid: c19f03e6d8bc3e84e9489ed02e7ca02a,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: 7204924118905732846, guid: c19f03e6d8bc3e84e9489ed02e7ca02a,
         type: 3}
@@ -12657,7 +12657,7 @@ PrefabInstance:
     - target: {fileID: 7204924118905732846, guid: c19f03e6d8bc3e84e9489ed02e7ca02a,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: 7204924118905732846, guid: c19f03e6d8bc3e84e9489ed02e7ca02a,
         type: 3}
@@ -12672,7 +12672,7 @@ PrefabInstance:
     - target: {fileID: 7204924118905732846, guid: c19f03e6d8bc3e84e9489ed02e7ca02a,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
+      value: -90
       objectReference: {fileID: 0}
     - target: {fileID: 7204924118905732846, guid: c19f03e6d8bc3e84e9489ed02e7ca02a,
         type: 3}
@@ -12706,7 +12706,7 @@ PrefabInstance:
     - target: {fileID: 2394499989696310675, guid: c19f03e6d8bc3e84e9489ed02e7ca02a,
         type: 3}
       propertyPath: m_Name
-      value: MoveableChessPiece (17)
+      value: BlackPawn
       objectReference: {fileID: 0}
     - target: {fileID: 7204924118905732846, guid: c19f03e6d8bc3e84e9489ed02e7ca02a,
         type: 3}
@@ -12726,7 +12726,7 @@ PrefabInstance:
     - target: {fileID: 7204924118905732846, guid: c19f03e6d8bc3e84e9489ed02e7ca02a,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.057600003
+      value: 0.0292
       objectReference: {fileID: 0}
     - target: {fileID: 7204924118905732846, guid: c19f03e6d8bc3e84e9489ed02e7ca02a,
         type: 3}
@@ -12736,7 +12736,7 @@ PrefabInstance:
     - target: {fileID: 7204924118905732846, guid: c19f03e6d8bc3e84e9489ed02e7ca02a,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.0899
+      value: 0.0596
       objectReference: {fileID: 0}
     - target: {fileID: 7204924118905732846, guid: c19f03e6d8bc3e84e9489ed02e7ca02a,
         type: 3}
@@ -12805,7 +12805,7 @@ PrefabInstance:
     - target: {fileID: 2394499989696310675, guid: c19f03e6d8bc3e84e9489ed02e7ca02a,
         type: 3}
       propertyPath: m_Name
-      value: MoveableChessPiece (9)
+      value: WhitePawn
       objectReference: {fileID: 0}
     - target: {fileID: 7204924118905732846, guid: c19f03e6d8bc3e84e9489ed02e7ca02a,
         type: 3}
@@ -12825,7 +12825,7 @@ PrefabInstance:
     - target: {fileID: 7204924118905732846, guid: c19f03e6d8bc3e84e9489ed02e7ca02a,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.091
+      value: -0.1196
       objectReference: {fileID: 0}
     - target: {fileID: 7204924118905732846, guid: c19f03e6d8bc3e84e9489ed02e7ca02a,
         type: 3}
@@ -12835,7 +12835,7 @@ PrefabInstance:
     - target: {fileID: 7204924118905732846, guid: c19f03e6d8bc3e84e9489ed02e7ca02a,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.0899
+      value: -0.0893
       objectReference: {fileID: 0}
     - target: {fileID: 7204924118905732846, guid: c19f03e6d8bc3e84e9489ed02e7ca02a,
         type: 3}
@@ -12894,7 +12894,7 @@ PrefabInstance:
     - target: {fileID: 2394499989696310675, guid: c19f03e6d8bc3e84e9489ed02e7ca02a,
         type: 3}
       propertyPath: m_Name
-      value: MoveableChessPiece (28)
+      value: BlackBishopLight
       objectReference: {fileID: 0}
     - target: {fileID: 7204924118905732846, guid: c19f03e6d8bc3e84e9489ed02e7ca02a,
         type: 3}
@@ -12914,7 +12914,7 @@ PrefabInstance:
     - target: {fileID: 7204924118905732846, guid: c19f03e6d8bc3e84e9489ed02e7ca02a,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.0886
+      value: -0.0583
       objectReference: {fileID: 0}
     - target: {fileID: 7204924118905732846, guid: c19f03e6d8bc3e84e9489ed02e7ca02a,
         type: 3}
@@ -12924,7 +12924,7 @@ PrefabInstance:
     - target: {fileID: 7204924118905732846, guid: c19f03e6d8bc3e84e9489ed02e7ca02a,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.0583
+      value: 0.0897
       objectReference: {fileID: 0}
     - target: {fileID: 7204924118905732846, guid: c19f03e6d8bc3e84e9489ed02e7ca02a,
         type: 3}
@@ -12993,7 +12993,7 @@ PrefabInstance:
     - target: {fileID: 2394499989696310675, guid: c19f03e6d8bc3e84e9489ed02e7ca02a,
         type: 3}
       propertyPath: m_Name
-      value: MoveableChessPiece (11)
+      value: WhitePawn
       objectReference: {fileID: 0}
     - target: {fileID: 7204924118905732846, guid: c19f03e6d8bc3e84e9489ed02e7ca02a,
         type: 3}
@@ -13013,7 +13013,7 @@ PrefabInstance:
     - target: {fileID: 7204924118905732846, guid: c19f03e6d8bc3e84e9489ed02e7ca02a,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.091
+      value: -0.0006
       objectReference: {fileID: 0}
     - target: {fileID: 7204924118905732846, guid: c19f03e6d8bc3e84e9489ed02e7ca02a,
         type: 3}
@@ -13023,7 +13023,7 @@ PrefabInstance:
     - target: {fileID: 7204924118905732846, guid: c19f03e6d8bc3e84e9489ed02e7ca02a,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.0008
+      value: -0.0897
       objectReference: {fileID: 0}
     - target: {fileID: 7204924118905732846, guid: c19f03e6d8bc3e84e9489ed02e7ca02a,
         type: 3}
@@ -13087,7 +13087,7 @@ PrefabInstance:
     - target: {fileID: 2394499989696310675, guid: c19f03e6d8bc3e84e9489ed02e7ca02a,
         type: 3}
       propertyPath: m_Name
-      value: MoveableChessPiece (3)
+      value: WhiteHorse
       objectReference: {fileID: 0}
     - target: {fileID: 7204924118905732846, guid: c19f03e6d8bc3e84e9489ed02e7ca02a,
         type: 3}
@@ -13107,7 +13107,7 @@ PrefabInstance:
     - target: {fileID: 7204924118905732846, guid: c19f03e6d8bc3e84e9489ed02e7ca02a,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.1207
+      value: -0.0885
       objectReference: {fileID: 0}
     - target: {fileID: 7204924118905732846, guid: c19f03e6d8bc3e84e9489ed02e7ca02a,
         type: 3}
@@ -13117,12 +13117,12 @@ PrefabInstance:
     - target: {fileID: 7204924118905732846, guid: c19f03e6d8bc3e84e9489ed02e7ca02a,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.0594
+      value: -0.1189
       objectReference: {fileID: 0}
     - target: {fileID: 7204924118905732846, guid: c19f03e6d8bc3e84e9489ed02e7ca02a,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: 7204924118905732846, guid: c19f03e6d8bc3e84e9489ed02e7ca02a,
         type: 3}
@@ -13132,7 +13132,7 @@ PrefabInstance:
     - target: {fileID: 7204924118905732846, guid: c19f03e6d8bc3e84e9489ed02e7ca02a,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: 7204924118905732846, guid: c19f03e6d8bc3e84e9489ed02e7ca02a,
         type: 3}
@@ -13147,7 +13147,7 @@ PrefabInstance:
     - target: {fileID: 7204924118905732846, guid: c19f03e6d8bc3e84e9489ed02e7ca02a,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
+      value: -90
       objectReference: {fileID: 0}
     - target: {fileID: 7204924118905732846, guid: c19f03e6d8bc3e84e9489ed02e7ca02a,
         type: 3}
@@ -13181,7 +13181,7 @@ PrefabInstance:
     - target: {fileID: 2394499989696310675, guid: c19f03e6d8bc3e84e9489ed02e7ca02a,
         type: 3}
       propertyPath: m_Name
-      value: MoveableChessPiece (14)
+      value: WhitePawn
       objectReference: {fileID: 0}
     - target: {fileID: 7204924118905732846, guid: c19f03e6d8bc3e84e9489ed02e7ca02a,
         type: 3}
@@ -13201,7 +13201,7 @@ PrefabInstance:
     - target: {fileID: 7204924118905732846, guid: c19f03e6d8bc3e84e9489ed02e7ca02a,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.091
+      value: -0.0308
       objectReference: {fileID: 0}
     - target: {fileID: 7204924118905732846, guid: c19f03e6d8bc3e84e9489ed02e7ca02a,
         type: 3}
@@ -13211,7 +13211,7 @@ PrefabInstance:
     - target: {fileID: 7204924118905732846, guid: c19f03e6d8bc3e84e9489ed02e7ca02a,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.0288
+      value: -0.0892
       objectReference: {fileID: 0}
     - target: {fileID: 7204924118905732846, guid: c19f03e6d8bc3e84e9489ed02e7ca02a,
         type: 3}
@@ -13275,7 +13275,7 @@ PrefabInstance:
     - target: {fileID: 2394499989696310675, guid: c19f03e6d8bc3e84e9489ed02e7ca02a,
         type: 3}
       propertyPath: m_Name
-      value: MoveableChessPiece (24)
+      value: BlackPawn
       objectReference: {fileID: 0}
     - target: {fileID: 7204924118905732846, guid: c19f03e6d8bc3e84e9489ed02e7ca02a,
         type: 3}
@@ -13295,7 +13295,7 @@ PrefabInstance:
     - target: {fileID: 7204924118905732846, guid: c19f03e6d8bc3e84e9489ed02e7ca02a,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.058238383
+      value: -0.0299
       objectReference: {fileID: 0}
     - target: {fileID: 7204924118905732846, guid: c19f03e6d8bc3e84e9489ed02e7ca02a,
         type: 3}
@@ -13305,7 +13305,7 @@ PrefabInstance:
     - target: {fileID: 7204924118905732846, guid: c19f03e6d8bc3e84e9489ed02e7ca02a,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.1189
+      value: 0.0602
       objectReference: {fileID: 0}
     - target: {fileID: 7204924118905732846, guid: c19f03e6d8bc3e84e9489ed02e7ca02a,
         type: 3}
@@ -13374,7 +13374,7 @@ PrefabInstance:
     - target: {fileID: 2394499989696310675, guid: c19f03e6d8bc3e84e9489ed02e7ca02a,
         type: 3}
       propertyPath: m_Name
-      value: MoveableChessPiece (6)
+      value: WhiteQueen
       objectReference: {fileID: 0}
     - target: {fileID: 7204924118905732846, guid: c19f03e6d8bc3e84e9489ed02e7ca02a,
         type: 3}
@@ -13394,7 +13394,7 @@ PrefabInstance:
     - target: {fileID: 7204924118905732846, guid: c19f03e6d8bc3e84e9489ed02e7ca02a,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.1207
+      value: -0.0306
       objectReference: {fileID: 0}
     - target: {fileID: 7204924118905732846, guid: c19f03e6d8bc3e84e9489ed02e7ca02a,
         type: 3}
@@ -13404,7 +13404,7 @@ PrefabInstance:
     - target: {fileID: 7204924118905732846, guid: c19f03e6d8bc3e84e9489ed02e7ca02a,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.0288
+      value: -0.1185
       objectReference: {fileID: 0}
     - target: {fileID: 7204924118905732846, guid: c19f03e6d8bc3e84e9489ed02e7ca02a,
         type: 3}
@@ -13468,7 +13468,7 @@ PrefabInstance:
     - target: {fileID: 2394499989696310675, guid: c19f03e6d8bc3e84e9489ed02e7ca02a,
         type: 3}
       propertyPath: m_Name
-      value: MoveableChessPiece (13)
+      value: WhitePawn
       objectReference: {fileID: 0}
     - target: {fileID: 7204924118905732846, guid: c19f03e6d8bc3e84e9489ed02e7ca02a,
         type: 3}
@@ -13488,7 +13488,7 @@ PrefabInstance:
     - target: {fileID: 7204924118905732846, guid: c19f03e6d8bc3e84e9489ed02e7ca02a,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.091
+      value: 0.0894
       objectReference: {fileID: 0}
     - target: {fileID: 7204924118905732846, guid: c19f03e6d8bc3e84e9489ed02e7ca02a,
         type: 3}
@@ -13498,7 +13498,7 @@ PrefabInstance:
     - target: {fileID: 7204924118905732846, guid: c19f03e6d8bc3e84e9489ed02e7ca02a,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.0283
+      value: -0.0911
       objectReference: {fileID: 0}
     - target: {fileID: 7204924118905732846, guid: c19f03e6d8bc3e84e9489ed02e7ca02a,
         type: 3}
@@ -13562,7 +13562,7 @@ PrefabInstance:
     - target: {fileID: 2394499989696310675, guid: c19f03e6d8bc3e84e9489ed02e7ca02a,
         type: 3}
       propertyPath: m_Name
-      value: MoveableChessPiece (32)
+      value: BlackRook
       objectReference: {fileID: 0}
     - target: {fileID: 7204924118905732846, guid: c19f03e6d8bc3e84e9489ed02e7ca02a,
         type: 3}
@@ -13582,7 +13582,7 @@ PrefabInstance:
     - target: {fileID: 7204924118905732846, guid: c19f03e6d8bc3e84e9489ed02e7ca02a,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.08923838
+      value: -0.1181
       objectReference: {fileID: 0}
     - target: {fileID: 7204924118905732846, guid: c19f03e6d8bc3e84e9489ed02e7ca02a,
         type: 3}
@@ -13592,7 +13592,7 @@ PrefabInstance:
     - target: {fileID: 7204924118905732846, guid: c19f03e6d8bc3e84e9489ed02e7ca02a,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.1189
+      value: 0.0903
       objectReference: {fileID: 0}
     - target: {fileID: 7204924118905732846, guid: c19f03e6d8bc3e84e9489ed02e7ca02a,
         type: 3}
@@ -13661,7 +13661,7 @@ PrefabInstance:
     - target: {fileID: 2394499989696310675, guid: c19f03e6d8bc3e84e9489ed02e7ca02a,
         type: 3}
       propertyPath: m_Name
-      value: MoveableChessPiece (12)
+      value: WhitePawn
       objectReference: {fileID: 0}
     - target: {fileID: 7204924118905732846, guid: c19f03e6d8bc3e84e9489ed02e7ca02a,
         type: 3}
@@ -13681,7 +13681,7 @@ PrefabInstance:
     - target: {fileID: 7204924118905732846, guid: c19f03e6d8bc3e84e9489ed02e7ca02a,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.091
+      value: -0.0599
       objectReference: {fileID: 0}
     - target: {fileID: 7204924118905732846, guid: c19f03e6d8bc3e84e9489ed02e7ca02a,
         type: 3}
@@ -13691,7 +13691,7 @@ PrefabInstance:
     - target: {fileID: 7204924118905732846, guid: c19f03e6d8bc3e84e9489ed02e7ca02a,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.0583
+      value: -0.0907
       objectReference: {fileID: 0}
     - target: {fileID: 7204924118905732846, guid: c19f03e6d8bc3e84e9489ed02e7ca02a,
         type: 3}
@@ -13755,7 +13755,7 @@ PrefabInstance:
     - target: {fileID: 2394499989696310675, guid: c19f03e6d8bc3e84e9489ed02e7ca02a,
         type: 3}
       propertyPath: m_Name
-      value: MoveableChessPiece (15)
+      value: WhitePawn
       objectReference: {fileID: 0}
     - target: {fileID: 7204924118905732846, guid: c19f03e6d8bc3e84e9489ed02e7ca02a,
         type: 3}
@@ -13849,7 +13849,7 @@ PrefabInstance:
     - target: {fileID: 2394499989696310675, guid: c19f03e6d8bc3e84e9489ed02e7ca02a,
         type: 3}
       propertyPath: m_Name
-      value: MoveableChessPiece (16)
+      value: WhitePawn
       objectReference: {fileID: 0}
     - target: {fileID: 7204924118905732846, guid: c19f03e6d8bc3e84e9489ed02e7ca02a,
         type: 3}
@@ -13869,7 +13869,7 @@ PrefabInstance:
     - target: {fileID: 7204924118905732846, guid: c19f03e6d8bc3e84e9489ed02e7ca02a,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.09036162
+      value: 0.059
       objectReference: {fileID: 0}
     - target: {fileID: 7204924118905732846, guid: c19f03e6d8bc3e84e9489ed02e7ca02a,
         type: 3}
@@ -13879,7 +13879,7 @@ PrefabInstance:
     - target: {fileID: 7204924118905732846, guid: c19f03e6d8bc3e84e9489ed02e7ca02a,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.1189
+      value: -0.0916
       objectReference: {fileID: 0}
     - target: {fileID: 7204924118905732846, guid: c19f03e6d8bc3e84e9489ed02e7ca02a,
         type: 3}
@@ -13943,7 +13943,7 @@ PrefabInstance:
     - target: {fileID: 2394499989696310675, guid: c19f03e6d8bc3e84e9489ed02e7ca02a,
         type: 3}
       propertyPath: m_Name
-      value: MoveableChessPiece (27)
+      value: BlackQueen
       objectReference: {fileID: 0}
     - target: {fileID: 7204924118905732846, guid: c19f03e6d8bc3e84e9489ed02e7ca02a,
         type: 3}
@@ -13963,7 +13963,7 @@ PrefabInstance:
     - target: {fileID: 7204924118905732846, guid: c19f03e6d8bc3e84e9489ed02e7ca02a,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.0886
+      value: -0.028
       objectReference: {fileID: 0}
     - target: {fileID: 7204924118905732846, guid: c19f03e6d8bc3e84e9489ed02e7ca02a,
         type: 3}
@@ -13973,7 +13973,7 @@ PrefabInstance:
     - target: {fileID: 7204924118905732846, guid: c19f03e6d8bc3e84e9489ed02e7ca02a,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.0008
+      value: 0.0893
       objectReference: {fileID: 0}
     - target: {fileID: 7204924118905732846, guid: c19f03e6d8bc3e84e9489ed02e7ca02a,
         type: 3}
@@ -14042,7 +14042,7 @@ PrefabInstance:
     - target: {fileID: 2394499989696310675, guid: c19f03e6d8bc3e84e9489ed02e7ca02a,
         type: 3}
       propertyPath: m_Name
-      value: MoveableChessPiece (30)
+      value: BlackKing
       objectReference: {fileID: 0}
     - target: {fileID: 7204924118905732846, guid: c19f03e6d8bc3e84e9489ed02e7ca02a,
         type: 3}
@@ -14062,7 +14062,7 @@ PrefabInstance:
     - target: {fileID: 7204924118905732846, guid: c19f03e6d8bc3e84e9489ed02e7ca02a,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.0886
+      value: -0.0002
       objectReference: {fileID: 0}
     - target: {fileID: 7204924118905732846, guid: c19f03e6d8bc3e84e9489ed02e7ca02a,
         type: 3}
@@ -14072,7 +14072,7 @@ PrefabInstance:
     - target: {fileID: 7204924118905732846, guid: c19f03e6d8bc3e84e9489ed02e7ca02a,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.0288
+      value: 0.0885
       objectReference: {fileID: 0}
     - target: {fileID: 7204924118905732846, guid: c19f03e6d8bc3e84e9489ed02e7ca02a,
         type: 3}
