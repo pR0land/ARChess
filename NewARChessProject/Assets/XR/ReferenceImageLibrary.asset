@@ -21,9 +21,9 @@ MonoBehaviour:
       m_GuidLow: 4833457964150104446
       m_GuidHigh: 11938238034866315935
     m_SerializedTextureGuid:
-      m_GuidLow: 519242228105928461
-      m_GuidHigh: 1165852495910977130
-    m_Size: {x: 0.064526536, y: 0.065}
+      m_GuidLow: 537156147371069976
+      m_GuidHigh: 13299419419629144186
+    m_Size: {x: 0.064526536, y: 0.09279948}
     m_SpecifySize: 1
     m_Name: SkakBillede
     m_Texture: {fileID: 0}
