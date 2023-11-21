@@ -75,6 +75,4 @@ public class ARChessboardManager : MonoBehaviour
         // Create an anchor using the ARAnchorManager
         return anchorManager.AttachAnchor((ARPlane)hit.trackable, hit.pose);
     }
-
-
 }
