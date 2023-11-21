@@ -8,11 +8,13 @@ using System.Collections.Generic;
 public class ARChessboardManager : MonoBehaviour
 {
     [SerializeField]
+    private GameObject chessboardPrefab; // Reference to the chessboard prefab
+    [SerializeField]
     private ARPlaneManager arPlaneManager; // Reference to the ARPlaneManager
     [SerializeField]
     private ARRaycastManager raycastManager; // Reference to the ARRaycastManager
     [SerializeField]
-    private GameObject chessboardPrefab; // Reference to the chessboard prefab
+    private ARAnchorManager anchorManager; // Reference to the ARAnchorManager
     
     private bool _isChessboardPlaced; // Bool for checking if the chessboard has been placed
 
@@ -33,22 +35,46 @@ public class ARChessboardManager : MonoBehaviour
     // Method for placing the chessboard
     private void TryPlaceChessboard(Vector2 touchPosition)
     {
-        List<ARRaycastHit> hits = new List<ARRaycastHit>();
+        List<ARRaycastHit> hits = new List<ARRaycastHit>(); // Create a list of ARRaycastHits
         
         // Check if the user has touched a plane
         if (raycastManager.Raycast(touchPosition, hits, TrackableType.PlaneWithinPolygon))
         {
             Pose hitPose = hits[0].pose; // Get the pose of the hit
-            Instantiate(chessboardPrefab, hitPose.position, hitPose.rotation); // Instantiate the chessboard
-            _isChessboardPlaced = true; // Set the _isChessboardPlaced bool to true
-
-            // Once the chessboard has been placed, disable the visualization of all planes
-            foreach (var plane in arPlaneManager.trackables)
-            {
-                plane.gameObject.SetActive(false); // Disable plane
-            }
+            ARAnchor anchor = CreateAnchor(hits[0]); // Create an anchor using the hit information
             
-            arPlaneManager.enabled = false; // Disable the ARPlaneManager after the chessboard has been placed
+            // Check if an anchor was successfully created
+            if (anchor != null)
+            {
+                // Instantiate the chessboard and parent it to the anchor
+                GameObject instantiatedChessboard = Instantiate(chessboardPrefab, hitPose.position, hitPose.rotation);
+                instantiatedChessboard.transform.parent = anchor.transform;
+                
+                _isChessboardPlaced = true; // Set the chessboard placed bool to true
+
+                // Disable the visualization of all planes once the chessboard is placed
+                foreach (var plane in arPlaneManager.trackables)
+                {
+                    plane.gameObject.SetActive(false); // Disable the plane
+                }
+
+                arPlaneManager.enabled = false; // Disable the ARPlaneManager after the chessboard has been placed
+            }
+            else
+            {
+                Debug.LogError("Failed to create anchor.");
+            }
         }
     }
+    
+    // Method to create an AR anchor
+    ARAnchor CreateAnchor(ARRaycastHit hit)
+    {
+        Debug.Log("Hit an AR Plane");
+        
+        // Create an anchor using the ARAnchorManager
+        return anchorManager.AttachAnchor((ARPlane)hit.trackable, hit.pose);
+    }
+
+
 }

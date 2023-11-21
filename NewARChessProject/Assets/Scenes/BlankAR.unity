@@ -1695,6 +1695,7 @@ MonoBehaviour:
   raycastManager: {fileID: 1173318916}
   chessboardPrefab: {fileID: 6722600799369124249, guid: 3de00c4c08433494db352afe8cac54ed,
     type: 3}
+  anchorManager: {fileID: 1173318917}
 --- !u!4 &1047995449
 Transform:
   m_ObjectHideFlags: 0
@@ -1724,6 +1725,7 @@ GameObject:
   - component: {fileID: 1173318912}
   - component: {fileID: 1173318914}
   - component: {fileID: 1173318916}
+  - component: {fileID: 1173318917}
   m_Layer: 0
   m_Name: XR Origin (XR Rig)
   m_TagString: Untagged
@@ -1822,6 +1824,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_RaycastPrefab: {fileID: 0}
+--- !u!114 &1173318917
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1173318909}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 728ad7fae8e460a4ba41265c7308d757, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_AnchorPrefab: {fileID: 0}
 --- !u!1 &1368874960
 GameObject:
   m_ObjectHideFlags: 0
