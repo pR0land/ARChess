@@ -1,2 +1,8 @@
 # ARChess
-This is a project where we try to play chess in AR
+
+This is a plug and play application, here a the things you need:
+1. Phone
+
+Thats it, then you just download the github, build the blankAR scene to your phone and its running.
+If you want to use marker detection then you need to use a vaseline can like this one:
+![alt text](https://github.com/pR0land/ARChess/blob/[branch]/image.jpg?raw=true)
