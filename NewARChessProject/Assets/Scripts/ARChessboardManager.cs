@@ -3,6 +3,7 @@ using UnityEngine.XR.ARFoundation;
 using UnityEngine.XR.ARSubsystems;
 using System.Collections.Generic;
 
+// This script is used for placing the chessboard on a detected plane
 
 public class ARChessboardManager : MonoBehaviour
 {
