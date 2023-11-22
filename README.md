@@ -1,7 +1,7 @@
 # ARChess
 
 This is a plug and play application, here a the things you need:
-1. Phone
+1. Android phone
 2. Unity version 2022.3.9f1
 
 Thats it, then you just download the github, build the blankAR scene to your phone and its running.
