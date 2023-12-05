@@ -62,7 +62,7 @@ public class ARChessboardManager : MonoBehaviour
             }
             else
             {
-                Debug.LogError("Failed to create anchor.");
+                Debug.LogError("Failed to create anchor."); //Checking if we create and anchor, or if it failed.
             }
         }
     }
@@ -70,7 +70,7 @@ public class ARChessboardManager : MonoBehaviour
     // Method to create an AR anchor
     ARAnchor CreateAnchor(ARRaycastHit hit)
     {
-        Debug.Log("Hit an AR Plane");
+        Debug.Log("Hit an AR Plane"); //Checking if we hit a valid AR Plane.
         
         // Create an anchor using the ARAnchorManager
         return anchorManager.AttachAnchor((ARPlane)hit.trackable, hit.pose);
